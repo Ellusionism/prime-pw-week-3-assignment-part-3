@@ -59,6 +59,6 @@ let parts = 572;
 let boxes = 0;
 while (parts >= 7) {
   parts = parts - 7;
-  boxes++;
+ boxes++;
 }
 console.log(`We filled ${boxes} boxes, and had ${parts} parts left over.`);
