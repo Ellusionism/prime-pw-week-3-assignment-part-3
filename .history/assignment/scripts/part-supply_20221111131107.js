@@ -45,8 +45,8 @@ console.log('7. Showing supplyChanges with "for of" loop:');
 for (i of supplyChanges) {
   if (i < 0) {
     console.log(`Removed ${Math.abs(i)} parts.`);
-  } else if (i > 0) {
-    console.log(`Added ${i} parts.`);
+  } else if (supplyChanges[i] > 0) {
+    console.log(`Added ${supplyChanges[i]} parts.`);
   } else {
     console.log(`No Change.`);
   }

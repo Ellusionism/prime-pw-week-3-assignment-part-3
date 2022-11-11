@@ -42,11 +42,11 @@ for (i=0; i<supplyChanges.length; i++) {
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop. for (i=0; i<supplyChanges.length; i++)
 console.log('7. Showing supplyChanges with "for of" loop:');
-for (i of supplyChanges) {
-  if (i < 0) {
-    console.log(`Removed ${Math.abs(i)} parts.`);
-  } else if (i > 0) {
-    console.log(`Added ${i} parts.`);
+for (i=0; i<supplyChanges.length; i++) {
+  if (supplyChanges[i] < 0) {
+    console.log(`Removed ${Math.abs(supplyChanges[i])} parts.`);
+  } else if (supplyChanges[i] > 0) {
+    console.log(`Added ${supplyChanges[i]} parts.`);
   } else {
     console.log(`No Change.`);
   }
