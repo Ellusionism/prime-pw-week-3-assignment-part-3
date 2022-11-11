@@ -33,10 +33,10 @@ for (i=0; i<supplyChanges.length; i++) {
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
-// 7. Rewrite the `for` loop from #6 as a `for of` loop. for (i=0; i<supplyChanges.length; i++)
-for (i of supplyChanges) {
- console.log('7. Showing supplyChanges with "for of" loop:', i);
+// 7. Rewrite the `for` loop from #6 as a `for of` loop. for (i=0; i<supplyChanges.length; i++) {
+ console.log('6. Showing supplyChanges with', supplyChanges[i]);
 }
+console.log('7. Showing supplyChanges with "for of" loop');
 
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.

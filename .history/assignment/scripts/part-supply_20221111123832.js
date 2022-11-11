@@ -16,8 +16,8 @@ console.log('3. Second supplyChange is:', supplyChanges[1]);
 
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges' 
 //    array & console.log the value removed.
-removed = supplyChanges.pop();
-console.log('4. Removed item:', removed);
+supplyChanges.pop();
+console.log('4. Removed item:', supplyChanges.pop());
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Adding 25 to supplyChanges.');
@@ -27,16 +27,13 @@ supplyChanges.push(25);
 //    - if it is a positive number (greater than 0), log 'Added x parts.' 
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.' 
-for (i=0; i<supplyChanges.length; i++) {
- console.log('6. Showing supplyChanges...', supplyChanges[i]);
-}
+for (i=0; iconsole.log('6. Showing supplyChanges...', supplyChanges[i]);
+
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
-// 7. Rewrite the `for` loop from #6 as a `for of` loop. for (i=0; i<supplyChanges.length; i++)
-for (i of supplyChanges) {
- console.log('7. Showing supplyChanges with "for of" loop:', i);
-}
+// 7. Rewrite the `for` loop from #6 as a `for of` loop. 
+console.log('7. Showing supplyChanges with "for of" loop');
 
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
