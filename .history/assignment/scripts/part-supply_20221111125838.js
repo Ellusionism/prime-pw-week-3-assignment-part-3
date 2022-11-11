@@ -27,23 +27,15 @@ supplyChanges.push(25);
 //    - if it is a positive number (greater than 0), log 'Added x parts.' 
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.' 
-  console.log('6. Showing supplyChanges...');
 for (i=0; i<supplyChanges.length; i++) {
-  if (supplyChanges[i] === 0) {
-    console.log(`No Change.`);
-  } else if (supplyChanges[i] > 0) {
-    console.log(`Added ${supplyChanges[i]} parts.`);
-  } else {
-    console.log(`Removed ${Math.abs(supplyChanges[i])} parts.`);
-  }
+  console.log('6. Showing supplyChanges...',);
 }
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop. for (i=0; i<supplyChanges.length; i++)
-console.log('7. Showing supplyChanges with "for of" loop:');
 for (i of supplyChanges) {
-  console.log("Supply changes:", i);
+  console.log('7. Showing supplyChanges with "for of" loop:', i);
 }
 
 // 8. Write a loop to determine the total number of parts available by
@@ -69,4 +61,4 @@ while (parts >= 7) {
   parts = parts - 7;
   boxes++;
 }
-console.log(`We filled`, boxes, `boxes, and had`, parts, `parts left over.`);
+console.log(`We filled ${boxes} boxes, and had ${parts} parts left over.`);

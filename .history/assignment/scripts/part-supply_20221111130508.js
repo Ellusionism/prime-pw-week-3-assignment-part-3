@@ -69,4 +69,4 @@ while (parts >= 7) {
   parts = parts - 7;
   boxes++;
 }
-console.log(`We filled`, boxes, `boxes, and had`, parts, `parts left over.`);
+console.log(`We filled ${boxes} boxes, and had ${parts} parts left over.`);

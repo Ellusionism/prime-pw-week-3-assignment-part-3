@@ -34,7 +34,7 @@ for (i=0; i<supplyChanges.length; i++) {
   } else if (supplyChanges[i] > 0) {
     console.log(`Added ${supplyChanges[i]} parts.`);
   } else {
-    console.log(`Removed ${Math.abs(supplyChanges[i])} parts.`);
+    console.log("`Removed ${supplyChanges[i]} parts.");
   }
 }
 
@@ -69,4 +69,4 @@ while (parts >= 7) {
   parts = parts - 7;
   boxes++;
 }
-console.log(`We filled`, boxes, `boxes, and had`, parts, `parts left over.`);
+console.log(`We filled ${boxes} boxes, and had ${parts} parts left over.`);
