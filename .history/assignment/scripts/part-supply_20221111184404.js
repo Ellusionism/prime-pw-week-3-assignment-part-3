@@ -75,8 +75,5 @@ while (parts > 6) {
   boxes++;
 }
 console.log(`We filled`, boxes, `boxes, and had`, parts, `parts left over.`);
-// Can also be written as:
-console.log(`We filled ` + boxes + ` boxes, and had ` + parts + ` parts left over.`);
-// Or alternatively:
-console.log(`We filled ${boxes} boxes, and had ${parts} parts left over.`);
-// Is there a preferred way to log results like these? I noticed only the first one logs the variables as number values, and the other two combine everything into a string.
+
+//
