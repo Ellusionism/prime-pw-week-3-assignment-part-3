@@ -1,5 +1,4 @@
 /* give your assignment a fun background color */
 body {
  background: rgb(63,242,251);
- background: linear-gradient(90deg, rgba(63,242,251,1) 0%, rgba(187,70,252,1) 100%);
-}
+background: linear-gradient(45deg, rgba(63,242,251,1) 0%, rgba(187,70,252,1) 100%);
